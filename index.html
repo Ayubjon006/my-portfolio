@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayubjon Rajabzoda – angehender Softwareentwickler">
+  <title>Ayubjon Rajabzoda | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo" data-page="home">AYUBJON<span>.DEV</span></a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Menü öffnen">☰</button>
+
+    <nav id="nav">
+      <button class="nav-link active" data-page="home">Home</button>
+      <button class="nav-link" data-page="about" data-de="Über mich" data-ru="Обо мне">Über mich</button>
+      <button class="nav-link" data-page="projects" data-de="Projekte" data-ru="Проекты">Projekte</button>
+      <button class="nav-link" data-page="skills" data-de="Kenntnisse" data-ru="Навыки">Kenntnisse</button>
+      <button class="nav-link" data-page="contact" data-de="Kontakt" data-ru="Контакты">Kontakt</button>
+      <div class="language">
+        <button class="lang active" data-lang="de">DE</button>
+        <span>/</span>
+        <button class="lang" data-lang="ru">RU</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="page active" id="home">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">● <span data-de="OFFEN FÜR LERNEN & WACHSEN" data-ru="УЧУСЬ • РАЗВИВАЮСЬ • РАСТУ">OFFEN FÜR LERNEN & WACHSEN</span></p>
+          <p data-de="Hallo, ich bin" data-ru="Привет, я">Hallo, ich bin</p>
+          <h1>Ayubjon<br><span>Rajabzoda</span></h1>
+          <h2 data-de="Angehender Softwareentwickler" data-ru="Начинающий разработчик ПО">Angehender Softwareentwickler</h2>
+          <p class="description"
+             data-de="Willkommen auf meiner Website! Ich lerne Programmierung und entwickle meine Fähigkeiten Schritt für Schritt weiter."
+             data-ru="Добро пожаловать на мой сайт! Я изучаю программирование и шаг за шагом развиваю свои навыки.">
+            Willkommen auf meiner Website! Ich lerne Programmierung und entwickle meine Fähigkeiten Schritt für Schritt weiter.
+          </p>
+
+          <div class="actions">
+            <button class="primary" data-go="projects" data-de="Meine Projekte ↗" data-ru="Мои проекты ↗">Meine Projekte ↗</button>
+            <button class="secondary" data-go="contact" data-de="Kontakt aufnehmen" data-ru="Связаться со мной">Kontakt aufnehmen</button>
+          </div>
+
+          <p class="location">⌖ <span data-de="Münster, Deutschland" data-ru="Мюнстер, Германия">Münster, Deutschland</span></p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="circle circle-one"></div>
+          <div class="circle circle-two"></div>
+          <div class="photo-card">
+            <img src="images/profile.jpg" alt="Ayubjon Rajabzoda"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="photo-placeholder"><span>A.</span></div>
+            <div class="photo-caption">AYUBJON RAJABZODA</div>
+          </div>
+          <div class="floating-card code">&lt;/&gt; <span>Code &amp; Creativity</span></div>
+          <div class="floating-card dream">✦ <span data-de="Große Ziele." data-ru="Большие цели.">Große Ziele.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page content-page" id="about" hidden>
+      <p class="eyebrow" data-de="WER ICH BIN" data-ru="КТО Я">WER ICH BIN</p>
+      <h1 class="section-title" data-de="Über mich." data-ru="Обо мне.">Über mich.</h1>
+      <p class="section-description" data-de="Ein kurzer Einblick in meinen Weg in die IT." data-ru="Коротко о моём пути в IT.">Ein kurzer Einblick in meinen Weg in die IT.</p>
+
+      <div class="about-card">
+        <div class="monogram">A<span>.</span></div>
+        <div>
+          <h2 data-de="Hallo, ich bin Ayubjon." data-ru="Привет, я Айюбджон.">Hallo, ich bin Ayubjon.</h2>
+          <p data-de="Ich bin Ayubjon Rajabzoda, angehender Softwareentwickler mit großer Leidenschaft für IT und Technologie. Ich lerne ständig dazu, entwickle meine Fähigkeiten und arbeite Schritt für Schritt an meinem Ziel: Software zu entwickeln, die Menschen weiterbringt."
+             data-ru="Я Айюбджон Раджабзода, начинающий разработчик ПО, увлечённый IT и технологиями. Я постоянно учусь, развиваю свои навыки и шаг за шагом иду к цели — создавать программы, которые помогают людям.">
+            Ich bin Ayubjon Rajabzoda, angehender Softwareentwickler mit großer Leidenschaft für IT und Technologie. Ich lerne ständig dazu, entwickle meine Fähigkeiten und arbeite Schritt für Schritt an meinem Ziel: Software zu entwickeln, die Menschen weiterbringt.
+          </p>
+          <h3 data-de="Lernen. Entwickeln. Wachsen." data-ru="Учиться. Создавать. Расти.">Lernen. Entwickeln. Wachsen.</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="page content-page" id="projects" hidden>
+      <p class="eyebrow" data-de="WAS ICH ENTWICKLE" data-ru="ЧТО Я СОЗДАЮ">WAS ICH ENTWICKLE</p>
+      <h1 class="section-title" data-de="Meine Projekte." data-ru="Мои проекты.">Meine Projekte.</h1>
+      <p class="section-description" data-de="Hier werden meine zukünftigen Projekte vorgestellt." data-ru="Здесь будут представлены мои будущие проекты.">Hier werden meine zukünftigen Projekte vorgestellt.</p>
+
+      <div class="empty-projects">
+        <div class="code-symbol">&lt;_&gt;</div>
+        <h2 data-de="Neue Ideen sind in Arbeit." data-ru="Новые идеи уже впереди.">Neue Ideen sind in Arbeit.</h2>
+        <p data-de="Dieser Bereich ist vorbereitet. Sobald ich eigene Projekte fertigstelle, werden sie hier ergänzt."
+           data-ru="Раздел подготовлен. Когда я завершу собственные проекты, они появятся здесь.">
+          Dieser Bereich ist vorbereitet. Sobald ich eigene Projekte fertigstelle, werden sie hier ergänzt.
+        </p>
+        <span class="coming">● <span data-de="WEITERE PROJEKTE FOLGEN" data-ru="СКОРО ПОЯВЯТСЯ НОВЫЕ ПРОЕКТЫ">WEITERE PROJEKTE FOLGEN</span></span>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="page content-page" id="skills" hidden>
+      <p class="eyebrow" data-de="WAS ICH LERNE" data-ru="ЧТО Я ИЗУЧАЮ">WAS ICH LERNE</p>
+      <h1 class="section-title" data-de="Kenntnisse." data-ru="Навыки.">Kenntnisse.</h1>
+      <p class="section-description" data-de="Meine aktuellen Grundlagen – ich lerne kontinuierlich weiter." data-ru="Мои текущие знания — я продолжаю учиться.">Meine aktuellen Grundlagen – ich lerne kontinuierlich weiter.</p>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="tech html">5</span><small>01</small>
+          <h2>HTML</h2>
+          <p data-de="Grundkenntnisse" data-ru="Базовые знания">Grundkenntnisse</p>
+          <div class="bar"><span style="width:55%"></span></div>
+        </article>
+        <article class="skill-card">
+          <span class="tech css">✳</span><small>02</small>
+          <h2>CSS</h2>
+          <p data-de="Grundkenntnisse" data-ru="Базовые знания">Grundkenntnisse</p>
+          <div class="bar"><span style="width:35%"></span></div>
+        </article>
+        <article class="skill-card">
+          <span class="tech js">JS</span><small>03</small>
+          <h2>JavaScript</h2>
+          <p data-de="Grundkenntnisse" data-ru="Базовые знания">Grundkenntnisse</p>
+          <div class="bar"><span style="width:25%"></span></div>
+        </article>
+        <article class="skill-card">
+          <span class="tech py">Py</span><small>04</small>
+          <h2>Python</h2>
+          <p data-de="Grundkenntnisse" data-ru="Базовые знания">Grundkenntnisse</p>
+          <div class="bar"><span style="width:20%"></span></div>
+        </article>
+      </div>
+
+      <div class="languages-card">
+        <p class="eyebrow" data-de="SPRACHEN" data-ru="ЯЗЫКИ">SPRACHEN</p>
+        <h2 data-de="Sprachen, die ich spreche" data-ru="Языки, которыми я владею">Sprachen, die ich spreche</h2>
+        <div class="language-row"><span>🇹🇯 <b data-de="Tadschikisch" data-ru="Таджикский">Tadschikisch</b></span><span data-de="Muttersprache" data-ru="Родной язык">Muttersprache</span></div>
+        <div class="language-row"><span>🇷🇺 <b>Русский / Russisch</b></span><span>B2</span></div>
+        <div class="language-row"><span>🇩🇪 <b>Deutsch</b></span><span data-de="Über B1" data-ru="Выше B1">Über B1</span></div>
+        <div class="language-row"><span>🇬🇧 <b>English</b></span><span data-de="Über B1" data-ru="Выше B1">Über B1</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page content-page" id="contact" hidden>
+      <p class="eyebrow" data-de="LASS UNS IN KONTAKT TRETEN" data-ru="ДАВАЙТЕ ОБЩАТЬСЯ">LASS UNS IN KONTAKT TRETEN</p>
+      <h1 class="section-title" data-de="Kontakt." data-ru="Контакты.">Kontakt.</h1>
+      <p class="section-description" data-de="Du möchtest mit mir sprechen oder hast eine Frage? Schreib mir gern." data-ru="Хотите связаться со мной или задать вопрос? Напишите мне.">Du möchtest mit mir sprechen oder hast eine Frage? Schreib mir gern.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:rajabovayubjon7@gmail.com">
+          <span class="contact-icon">@</span><small>EMAIL</small>
+          <strong>rajabovayubjon7@gmail.com</strong><span class="arrow">↗</span>
+        </a>
+        <a class="contact-card" href="tel:+4915901106947">
+          <span class="contact-icon">⌕</span><small>TELEFON</small>
+          <strong>+49 159 0110 6947</strong><span class="arrow">↗</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">⌖</span><small data-de="STANDORT" data-ru="МЕСТОПОЛОЖЕНИЕ">STANDORT</small>
+          <strong>Münster, Deutschland</strong>
+          <span class="contact-note" data-de="In Deutschland ansässig" data-ru="Живу в Германии">In Deutschland ansässig</span>
+        </div>
+      </div>
+      <p class="contact-footnote" data-de="Ich freue mich über freundliche Nachrichten und berufliche Kontakte." data-ru="Буду рад сообщениям и профессиональным знакомствам.">Ich freue mich über freundliche Nachrichten und berufliche Kontakte.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> AYUBJON.DEV</span>
+    <span data-de="Lernen. Entwickeln. Wachsen." data-ru="Учиться. Создавать. Расти.">Lernen. Entwickeln. Wachsen.</span>
+  </footer>
+</body>
+</html>
